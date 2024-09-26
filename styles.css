@@ -1,0 +1,12 @@
+body { 
+        font-family: Comic Sans MS;
+        background-color: rgb(176,101,0);
+        line-height: 1.7;
+        }
+h1 {
+        color: rgb(135,206,250);
+        }
+h2 { 
+        color: rgb(139,0,0);
+        }
+p {     color: violet}
