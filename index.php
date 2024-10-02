@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+<div class="container">
     <h1>Halimbawa Store</h1>
     <h2>Menu</h2>
 
@@ -42,7 +43,8 @@
         <input type="number" id="quantity" name="quantity" min="0" value="1"><br>
         <label for="cash">Cash:</label>
         <input type="number" id="cash" name="cash" step="0.01" min="0"><br>
-        <input type="submit" value="Place Order">
+        <input type="submit" value="I'll order this">
     </form>
+</div>
 </body>
 </html>
