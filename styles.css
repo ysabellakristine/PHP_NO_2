@@ -1,12 +1,35 @@
 body { 
-        font-family: Comic Sans MS;
-        background-color: rgb(176,101,0);
-        line-height: 1.7;
-        }
+    font-family: Comic Sans MS;
+    background-color: rgb(5, 255, 255);
+    line-height: 1.7;
+    display: flex;             
+    justify-content: center;   
+    align-items: center;        
+    height: 100vh;              
+    margin: 0;  
+    flex-direction: column;    
+    text-align: center;         
+    color: rgb(238, 0, 238);             
+}
+
 h1 {
-        color: rgb(135,206,250);
-        }
+    color: rgb(35, 159, 237);   
+}
+
 h2 { 
-        color: rgb(139,0,0);
-        }
-p {     color: violet}
+    color: rgb(25s5, 0, 0);      
+}
+
+p {
+    color: violet;             
+}
+
+form {
+    width: 100%;                
+    display: block;             
+}
+
+input, select {
+    display: block;             
+    margin: 10px auto;          
+}
