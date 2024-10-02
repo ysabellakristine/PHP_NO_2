@@ -6,10 +6,32 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Bella's Burger Store</h1>
+    <h1>Halimbawa Store</h1>
+    <h2>Menu</h2>
+
+    <?php include('menu.php'); ?>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Price ($)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($menu_item as $product_name => $data) { ?>
+                <tr>
+                    <td><?= $product_name ?></td>
+                    <td><?= $data['description'] ?></td>
+                    <td><?= number_format($data['price'], 2) ?></td>
+                </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+
     <h2>Place Order</h2>
     <form action="place_order.php" method="post">
-        <?php include('menu.php'); ?>
         <label for="product">Select Product:</label>
         <select id="product" name="product">
             <?php foreach ($menu_item as $product_name => $data) { ?>
